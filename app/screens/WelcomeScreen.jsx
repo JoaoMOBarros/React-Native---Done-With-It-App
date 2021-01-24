@@ -2,6 +2,8 @@ import React from 'react';
 
 import {ImageBackground, View, Image, Text, StyleSheet} from 'react-native'
 
+import colors from '../config/colors'
+
 function WelcomeScreen(props) {
     return (
         <ImageBackground style={styles.background} source={require("../assets/background.jpg")}>
@@ -41,13 +43,13 @@ const styles = StyleSheet.create({
     buttonPlaceholder:{
         height: 70,
         width: "100%",
-        backgroundColor: "#fc5c65"
+        backgroundColor: colors.primary
     },
 
     buttonPlaceholderBlue:{
         height: 70,
         width: "100%",
-        backgroundColor: "#4ecdc4"
+        backgroundColor: colors.secondary
     }
 })
 
