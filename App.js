@@ -12,12 +12,7 @@ import AppButton from './app/components/AppButton/index.js';
 export default function App() {
 
   return (
-    <View>
-      <AppText>Eu Adoro Android</AppText>
-      <MaterialCommunityIcons name="email" size={60} color="dodgerblue"/>
-      <AppButton title="login"/>
-    </View>
-
+    <WelcomeScreen/>
   );
 }
 
