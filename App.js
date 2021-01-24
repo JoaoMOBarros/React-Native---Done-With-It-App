@@ -6,6 +6,7 @@ import ViewImageScreen from './app/screens/ViewImageScreen'
 
 import AppText from './app/components/AppText'
 import {MaterialCommunityIcons} from '@expo/vector-icons'
+import AppButton from './app/components/AppButton/index.js';
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
     <View>
       <AppText>Eu Adoro Android</AppText>
       <MaterialCommunityIcons name="email" size={60} color="dodgerblue"/>
+      <AppButton title="login"/>
     </View>
 
   );
