@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import colors from '../../config/colors'
 
 const styles = StyleSheet.create({
     text:{
         fontSize: 18,
-        color: "tomato",
+        color: colors.black,
         fontFamily: "Roboto"
     }
 })
