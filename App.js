@@ -9,10 +9,11 @@ import {MaterialCommunityIcons} from '@expo/vector-icons'
 import AppButton from './app/components/AppButton/index.js';
 import Card from './app/components/Card/index.js';
 import ListingDetailsScreens from './app/screens/ListingDetailsScreens';
+import MessagesScreen from './app/screens/MessagesScreen';
 
 
 export default function App() {
 
-  return <ViewImageScreen/>;
+  return <MessagesScreen/>;
 }
 

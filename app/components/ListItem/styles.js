@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
 
     outerContainer: {
         flexDirection: 'row',
+        padding: 12
     },
 
     title:{
