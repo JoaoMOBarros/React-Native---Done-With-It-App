@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         backgroundColor: colors.white,
         marginBottom: 20,
-        elevation: 10,
+        elevation: 5,
         overflow: 'hidden'
     },
     container: {
