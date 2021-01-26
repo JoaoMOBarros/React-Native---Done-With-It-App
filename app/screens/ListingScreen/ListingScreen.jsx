@@ -23,7 +23,7 @@ const saleItems = [
 
 function ListingScreen(props) {
   return (
-    <Screen>
+    <Screen style={styles.screen}>
       <View style={styles.container}>
         <FlatList
           data={saleItems}
