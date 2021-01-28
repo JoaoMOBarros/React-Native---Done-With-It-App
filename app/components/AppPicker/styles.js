@@ -1,4 +1,4 @@
-import { Platform, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import colors from "../../config/colors";
 
 const styles = StyleSheet.create({
@@ -13,10 +13,7 @@ const styles = StyleSheet.create({
   icon: {
     marginRight: 10,
   },
-  input: {
-    fontSize: 18,
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
-    color: colors.dark,
+  text: {
     flex: 1,
   },
 });
