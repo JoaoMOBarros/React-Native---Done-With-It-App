@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   View,
+  Text,
   TextInput,
   TouchableWithoutFeedback,
   Modal,
@@ -36,9 +37,13 @@ function AppPicker({ icon, items, placeholder, selectedItem, onSelectItem }) {
               style={styles.icon}
             />
           )}
-          <AppText style={styles.text}>
-            {selectedItem ? selectedItem : placeholder}
-          </AppText>
+
+          {selectedItem ? (
+            <AppText style={styles.text}>{selectedItem}</AppText>
+          ) : (
+            <AppText style={styles.placeholder}>{placeholder}</AppText>
+          )}
+
           <MaterialCommunityIcons
             name="chevron-down"
             size={24}
@@ -48,7 +53,14 @@ function AppPicker({ icon, items, placeholder, selectedItem, onSelectItem }) {
       </TouchableWithoutFeedback>
       <Modal visible={modalVisible} animationType="slide">
         <Screen>
-          <Button title="Close" onPress={() => setModalVisible(false)} />
+          <View>
+            <Text
+              style={styles.closeButton}
+              onPress={() => setModalVisible(false)}
+            >
+              CLOSE
+            </Text>
+          </View>
           <FlatList
             data={items}
             keyExtractor={(item) => item.value.toString()}

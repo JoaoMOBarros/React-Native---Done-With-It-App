@@ -1,30 +1,33 @@
-import { StyleSheet, Platform, StatusBar } from "react-native";
+import { StyleSheet } from "react-native";
 import colors from "../../config/colors";
 
 const styles = StyleSheet.create({
-    image: {
-        height: 80,
-        width: 80,
-        borderRadius: 50,
-    },
+  image: {
+    height: 80,
+    width: 80,
+    borderRadius: 50,
+  },
 
-    infoContainer: {
-        marginLeft: 10,
-        justifyContent: 'center'
-    },  
+  infoContainer: {
+    marginLeft: 10,
+    justifyContent: "center",
+    flex: 1,
+  },
 
-    outerContainer: {
-        flexDirection: 'row',
-        padding: 12,
-    },
+  outerContainer: {
+    alignItems: "center",
+    flexDirection: "row",
+    padding: 12,
+    backgroundColor: colors.white,
+  },
 
-    title:{
-        fontWeight: 'bold'
-    },
+  title: {
+    fontWeight: "bold",
+  },
 
-    subTitle: {
-        color: colors.medium
-    },
-})
+  subTitle: {
+    color: colors.medium,
+  },
+});
 
-export default styles
+export default styles;
