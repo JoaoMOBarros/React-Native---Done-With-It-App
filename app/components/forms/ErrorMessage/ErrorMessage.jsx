@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles";
-import AppText from "../AppText";
+import AppText from "../../AppText";
 import { View } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 

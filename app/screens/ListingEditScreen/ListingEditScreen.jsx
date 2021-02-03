@@ -2,10 +2,10 @@ import React from "react";
 
 import * as Yup from "yup";
 
-import AppForm from "../../components/AppForm";
-import AppFormField from "../../components/AppFormField";
+import AppForm from "../../components/forms/AppForm";
+import AppFormField from "../../components/forms/AppFormField";
 import AppFormPicker from "../../components/AppFormPicker";
-import SubmitButton from "../../components/SubmitButton";
+import SubmitButton from "../../components/forms/SubmitButton";
 import Screen from "../../components/Screen";
 
 const validationSchema = Yup.object().shape({
