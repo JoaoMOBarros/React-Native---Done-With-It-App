@@ -3,8 +3,8 @@ import colors from "../../config/colors";
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 10,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight + 16 : 0,
+    paddingHorizontal: 8,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     flex: 1,
   },
   view: {

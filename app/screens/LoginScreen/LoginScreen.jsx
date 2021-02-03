@@ -6,6 +6,7 @@ import styles from "./styles";
 import * as Yup from "yup";
 
 import AppForm from "../../components/forms/AppForm";
+import AppText from "../../components/AppText";
 import AppFormField from "../../components/forms/AppFormField";
 import SubmitButton from "../../components/forms/SubmitButton";
 import Screen from "../../components/Screen";
@@ -20,8 +21,9 @@ function LoginScreen(props) {
     <Screen>
       <Image
         style={styles.logo}
-        source={require("../../assets/logo-red.png")}
+        source={require("../../assets/logo/logo_horizontal_g.png")}
       />
+      <AppText style={styles.motto}>Sua encomenda a qualquer horário!</AppText>
       <AppForm
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => console.log(values)}
@@ -45,7 +47,8 @@ function LoginScreen(props) {
           secureTextEntry
           textContentType="password"
         />
-        <SubmitButton title="Submit" style={styles.button} />
+        <AppText style={styles.password}>Esqueceu a senha?</AppText>
+        <SubmitButton title="Entrar" style={styles.button} />
       </AppForm>
     </Screen>
   );

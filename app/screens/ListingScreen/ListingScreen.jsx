@@ -21,7 +21,7 @@ const saleItems = [
   },
 ];
 
-function ListingScreen(props) {
+function ListingScreen({ navigation }) {
   return (
     <Screen style={styles.screen}>
       <View style={styles.container}>
@@ -29,7 +29,12 @@ function ListingScreen(props) {
           data={saleItems}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <Card title={item.title} subTitle={item.price} image={item.image} />
+            <Card
+              title={item.title}
+              subTitle={item.price}
+              image={item.image}
+              onPress={() => navigation.navigate("ListingDetails", item)}
+            />
           )}
         />
       </View>

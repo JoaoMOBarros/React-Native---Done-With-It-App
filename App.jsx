@@ -17,11 +17,12 @@ import LoginScreen from "./app/screens/LoginScreen";
 import RegisterScreen from "./app/screens/RegisterScreen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
 
-import navigationTheme from "./app/navigation/navigationTheme";
+import NavigationTheme from "./app/navigation/NavigationTheme";
 
 // IMPORT NAVIGATORS
 
 import AuthNavigator from "./app/navigation/AuthNavigator";
+import AppNavigator from "./app/navigation/AppNavigator";
 
 const Tab = createBottomTabNavigator();
 const TabNavigator = () => (
@@ -68,9 +69,10 @@ const StackNavigator = () => (
 
 export default function App() {
   return (
-    <NavigationContainer theme={navigationTheme}>
+    <NavigationContainer theme={NavigationTheme}>
       {/* <StackNavigator /> */}
       <AuthNavigator />
+      {/* <AppNavigator /> */}
     </NavigationContainer>
   );
 }

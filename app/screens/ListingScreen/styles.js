@@ -1,13 +1,13 @@
-import {StyleSheet} from 'react-native'
-import colors from '../../config/colors'
+import { StyleSheet } from "react-native";
+import colors from "../../config/colors";
 
 const styles = StyleSheet.create({
-    container: {
-        padding: 20
-    }, 
-    screen:{
-        backgroundColor: colors.light
-    }
-})
+  container: {
+    paddingHorizontal: 10,
+  },
+  screen: {
+    backgroundColor: colors.light,
+  },
+});
 
-export default styles
+export default styles;
