@@ -5,6 +5,7 @@ import AppForm from "../../components/forms/AppForm";
 import AppFormField from "../../components/forms/AppFormField";
 import SubmitButton from "../../components/forms/SubmitButton";
 import Screen from "../../components/Screen";
+import AppTitle from "../../components/AppTitle";
 
 import * as Yup from "yup";
 
@@ -17,6 +18,7 @@ const validationSchema = Yup.object().shape({
 function RegisterScreen(props) {
   return (
     <Screen>
+      <AppTitle>Informações Pessoais</AppTitle>
       <AppForm
         initialValues={{ name: "", password: "", email: "" }}
         onSubmit={(values) => console.log(values)}
@@ -27,7 +29,7 @@ function RegisterScreen(props) {
           autoCompleteType="name"
           icon="account"
           name="name"
-          placeholder="Name"
+          placeholder="Nome"
         />
         <AppFormField
           autoCapitalize="none"
@@ -44,7 +46,7 @@ function RegisterScreen(props) {
           autoCorrect={false}
           icon="lock"
           name="password"
-          placeholder="Password"
+          placeholder="Senha"
           secureTextEntry
           textContentType="password"
         />
