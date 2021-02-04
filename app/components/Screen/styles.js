@@ -3,7 +3,7 @@ import colors from "../../config/colors";
 
 const styles = StyleSheet.create({
   screen: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 20,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     flex: 1,
   },

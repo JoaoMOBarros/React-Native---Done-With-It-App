@@ -15,9 +15,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   card: {
+    width: "98%",
     borderRadius: 15,
-    backgroundColor: colors.gray,
+    backgroundColor: colors.white,
     marginBottom: 20,
+    alignSelf: "center",
     elevation: 5,
     overflow: "hidden",
   },

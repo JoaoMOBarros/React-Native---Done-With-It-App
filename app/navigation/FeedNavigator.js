@@ -5,6 +5,7 @@ const Stack = createStackNavigator();
 
 import ListingScreen from "../screens/ListingScreen";
 import ListingDetailsScreen from "../screens/ListingDetailsScreens";
+import EntregaConcluidaScreen from "../screens/EntregaConcluidaScreen";
 
 const FeedNavigator = () => {
   return (
@@ -20,6 +21,12 @@ const FeedNavigator = () => {
         mode="modal"
         name="ListingDetails"
         component={ListingDetailsScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        mode="modal"
+        name="EntregaConcluida"
+        component={EntregaConcluidaScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

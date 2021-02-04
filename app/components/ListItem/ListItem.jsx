@@ -31,12 +31,12 @@ function ListItem({
               </AppText>
             )}
           </View>
-          <MaterialCommunityIcons
+          {/* <MaterialCommunityIcons
             style={styles.icon}
             color={colors.medium}
             name="chevron-right"
             size={30}
-          />
+          /> */}
         </View>
       </TouchableHighlight>
     </Swipeable>

@@ -2,6 +2,12 @@ import { StyleSheet } from "react-native";
 import colors from "../../config/colors";
 
 const styles = StyleSheet.create({
+  adicionar: {
+    marginTop: 10,
+    color: colors.primary,
+    alignSelf: "center",
+    fontWeight: "bold",
+  },
   button: {
     marginBottom: 10,
   },
@@ -30,6 +36,11 @@ const styles = StyleSheet.create({
   subTitle: {
     color: colors.secondary,
     fontWeight: "bold",
+  },
+  switchLine: {
+    flexDirection: "row",
+    flex: 1,
+    justifyContent: "space-between",
   },
   resultado: {
     fontSize: 19,

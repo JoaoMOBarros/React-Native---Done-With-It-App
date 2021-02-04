@@ -15,10 +15,15 @@ const styles = StyleSheet.create({
   },
 
   outerContainer: {
+    width: "98%",
+    alignSelf: "center",
     alignItems: "center",
     flexDirection: "row",
     padding: 12,
     backgroundColor: colors.white,
+    marginBottom: 20,
+    elevation: 5,
+    borderRadius: 10,
   },
 
   title: {

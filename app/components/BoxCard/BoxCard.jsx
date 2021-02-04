@@ -9,10 +9,10 @@ function BoxCard({ id, day, time, onPress }) {
       <View style={styles.card}>
         <View style={styles.container}>
           <AppText style={styles.title} numberOfLines={1}>
-            Box #{id}
+            Encomeda #{id}
           </AppText>
           <AppText style={styles.subTitle} numberOfLines={1}>
-            Entregue: {day}
+            Recebido: {day}
           </AppText>
           <AppText style={styles.subTitle} numberOfLines={1}>
             Horário: {time}

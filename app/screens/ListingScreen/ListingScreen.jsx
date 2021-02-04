@@ -6,6 +6,9 @@ import BoxCard from "../../components/BoxCard";
 import Screen from "../../components/Screen";
 import AppTitle from "../../components/AppTitle";
 
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import AppText from "../../components/AppText";
+
 const saleItems = [
   {
     id: 4,
@@ -33,12 +36,26 @@ function ListingScreen({ navigation }) {
   return (
     <Screen style={styles.screen}>
       <View style={styles.userInfo}>
-        <AppTitle style={styles.title}>Olá, André!</AppTitle>
+        <View>
+          <AppTitle style={styles.title}>Olá, André!</AppTitle>
+          <View style={styles.premium}>
+            <MaterialCommunityIcons name="star" size={22} color={"#ffffff"} />
+            <AppText style={styles.premiumText}>weBox Premium</AppText>
+          </View>
+        </View>
         <Image
           style={styles.profileImage}
           source={require("../../assets/mosh.jpg")}
         />
       </View>
+      <View style={styles.card}>
+        <AppText style={styles.subTitle}>Informações da sua Box</AppText>
+        <AppText style={styles.text}>Rua Bertho Cortez, nº77</AppText>
+        <AppText style={styles.text}>Butantã, São Paulo</AppText>
+        <AppText style={styles.text}>CEP: 10236-886</AppText>
+        <AppText style={styles.text}>Box: 72</AppText>
+      </View>
+      <AppText style={styles.sectionTitle}>Encomendas recentes</AppText>
       <FlatList
         showsVerticalScrollIndicator={false}
         data={saleItems}

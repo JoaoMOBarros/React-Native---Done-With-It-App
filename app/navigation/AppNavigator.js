@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import ListingEditScreen from "../screens/ListingEditScreen";
+import HistoricoScreen from "../screens/HistoricoScreen";
 import AccountScreen from "../screens/AccountScreen";
 
 import FeedNavigator from "./FeedNavigator";
@@ -21,7 +21,7 @@ const AppNavigator = () => (
     }}
   >
     <Tab.Screen
-      name="Feed"
+      name="Início"
       component={FeedNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
@@ -30,8 +30,8 @@ const AppNavigator = () => (
       }}
     />
     <Tab.Screen
-      name="ListingEdit"
-      component={ListingEditScreen}
+      name="Historico"
+      component={HistoricoScreen}
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons
@@ -43,7 +43,7 @@ const AppNavigator = () => (
       }}
     />
     <Tab.Screen
-      name="Account"
+      name="Conta"
       component={AccountScreen}
       options={{
         tabBarIcon: ({ color, size }) => (
