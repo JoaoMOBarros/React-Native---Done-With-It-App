@@ -24,8 +24,11 @@ const AppNavigator = () => (
       name="Início"
       component={FeedNavigator}
       options={{
+        tabBarLabel: () => {
+          return null;
+        },
         tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="home" color={color} size={size} />
+          <MaterialCommunityIcons name="home" color={color} size={size * 1.2} />
         ),
       }}
     />
@@ -33,11 +36,14 @@ const AppNavigator = () => (
       name="Historico"
       component={HistoricoScreen}
       options={{
+        tabBarLabel: () => {
+          return null;
+        },
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons
-            name="plus-circle"
+            name="history"
             color={color}
-            size={size}
+            size={size * 1.2}
           />
         ),
       }}
@@ -46,8 +52,15 @@ const AppNavigator = () => (
       name="Conta"
       component={AccountScreen}
       options={{
+        tabBarLabel: () => {
+          return null;
+        },
         tabBarIcon: ({ color, size }) => (
-          <MaterialCommunityIcons name="account" color={color} size={size} />
+          <MaterialCommunityIcons
+            name="account"
+            color={color}
+            size={size * 1.2}
+          />
         ),
       }}
     />
