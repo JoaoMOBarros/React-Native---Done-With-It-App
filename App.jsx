@@ -71,8 +71,8 @@ export default function App() {
   return (
     <NavigationContainer theme={NavigationTheme}>
       {/* <StackNavigator /> */}
-      <AuthNavigator />
-      {/* <AppNavigator /> */}
+      {/* <AuthNavigator /> */}
+      <AppNavigator />
     </NavigationContainer>
   );
 }

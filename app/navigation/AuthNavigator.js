@@ -6,7 +6,13 @@ import RegisterScreen from "../screens/RegisterScreen";
 
 const Stack = createStackNavigator();
 const AuthNavigator = () => (
-  <Stack.Navigator>
+  <Stack.Navigator
+    screenOptions={{
+      headerStyle: { backgroundColor: "green" },
+      headerTintColor: "white",
+      headerShown: true,
+    }}
+  >
     <Stack.Screen
       name="Welcome"
       component={WelcomeScreen}

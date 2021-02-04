@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 25,
     fontWeight: "bold",
+    marginTop: 25,
     marginBottom: 25,
     color: colors.primary,
     fontFamily: "Roboto",

@@ -8,12 +8,19 @@ import ListingDetailsScreen from "../screens/ListingDetailsScreens";
 
 const FeedNavigator = () => {
   return (
-    <Stack.Navigator mode="modal">
-      <Stack.Screen name="Listings" component={ListingScreen} />
+    <Stack.Navigator>
       <Stack.Screen
+        name="Listings"
+        component={ListingScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        mode="modal"
         name="ListingDetails"
         component={ListingDetailsScreen}
-        options={{ headerShown: true }}
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );

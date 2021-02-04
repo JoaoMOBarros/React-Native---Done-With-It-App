@@ -12,7 +12,14 @@ import FeedNavigator from "./FeedNavigator";
 const Tab = createBottomTabNavigator();
 
 const AppNavigator = () => (
-  <Tab.Navigator>
+  <Tab.Navigator
+    tabBarOptions={{
+      activeBackgroundColor: "white",
+      activeTintColor: "#2FAC10",
+      inactiveBackgroundColor: "white",
+      inactiveTintColor: "#959595",
+    }}
+  >
     <Tab.Screen
       name="Feed"
       component={FeedNavigator}
